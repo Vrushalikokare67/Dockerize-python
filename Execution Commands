@@ -1,0 +1,65 @@
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> docker images
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+<none>                 <none>              ce6e184bfc78        About an hour ago   107MB
+express                latest              6f8b64208228        2 hours ago         184MB
+ubuntu                 20.04               ff0fea8310f3        5 days ago          72.8MB
+ubuntu                 latest              ff0fea8310f3        5 days ago          72.8MB
+node-docker-tutorial   latest              9563e47c43f8        4 weeks ago         189MB
+mysql                  latest              17b062d639f4        4 weeks ago         519MB
+postgres               latest              6a3c44872108        5 weeks ago         374MB
+mongo                  latest              5285cb69ea55        7 weeks ago         698MB        
+ubuntu                 <none>              54c9d81cbb44        7 weeks ago         72.8MB       
+nginx                  latest              c316d5a335a5        8 weeks ago         142MB        
+hello-world            latest              feb5d9fea6a5        6 months ago        13.3kB
+node                   9-slim              e20bb4abe4ee        3 years ago         182MB
+java                   latest              d23bdf5b1b1b        5 years ago         643MB
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> docker run python
+Unable to find image 'python:latest' locally
+latest: Pulling from library/python
+5492f66d2700: Pull complete
+540ff8c0841d: Pull complete
+a0bf850a0df0: Pull complete
+d751dc38ae51: Pull complete
+9720a112e886: Pull complete
+f97b81fbdbd9: Pull complete
+4c4dc701b2d6: Pull complete
+e8a2d0a0ed40: Pull complete
+6c6773b870d9: Pull complete
+Digest: sha256:c79b09764b2a8d920bcf3c5fe79b79370f445c855f3822069096c8995f9cee0c
+Status: Downloaded newer image for python:latest
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> docker images
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+<none>                 <none>              ce6e184bfc78        About an hour ago   107MB        
+express                latest              6f8b64208228        3 hours ago         184MB        
+python                 latest              03ef5b5a30a4        4 days ago          919MB        
+ubuntu                 20.04               ff0fea8310f3        5 days ago          72.8MB       
+ubuntu                 latest              ff0fea8310f3        5 days ago          72.8MB       
+node-docker-tutorial   latest              9563e47c43f8        4 weeks ago         189MB        
+mysql                  latest              17b062d639f4        4 weeks ago         519MB        
+postgres               latest              6a3c44872108        5 weeks ago         374MB        
+mongo                  latest              5285cb69ea55        7 weeks ago         698MB        
+ubuntu                 <none>              54c9d81cbb44        7 weeks ago         72.8MB       
+nginx                  latest              c316d5a335a5        8 weeks ago         142MB        
+hello-world            latest              feb5d9fea6a5        6 months ago        13.3kB       
+node                   9-slim              e20bb4abe4ee        3 years ago         182MB
+java                   latest              d23bdf5b1b1b        5 years ago         643MB        
+
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> python .\print.py 
+Hello World 
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS          
+    PORTS                    NAMES
+db6903c096c1        express             "npm start"         3 hours ago         Up 3 hours          0.0.0.0:3000->3000/tcp   lucid_hermann
+
+
+PS C:\Users\vrush\OneDrive\Documents\Dockerizing python> 
